@@ -1,22 +1,16 @@
-include(../../Games/GameK3OpEenRij/GameK3OpEenRijConsole.pri)
+include(../K3OpEenRij/GameK3OpEenRijConsole.pri)
 
 SOURCES += \
-    ../../Games/GameK3OpEenRij/qtk3opeenrijselectplayerwidget.cpp \
-#    ../../Games/GameK3OpEenRij/qtk3opeenrijresources.cpp \
-    ../../Games/GameK3OpEenRij/qtk3opeenrijmenudialog.cpp \
-    ../../Games/GameK3OpEenRij/qtk3opeenrijinstructionsdialog.cpp
+    ../K3OpEenRij/qtk3opeenrijselectplayerwidget.cpp \
+    ../K3OpEenRij/qtk3opeenrijmenudialog.cpp \
+    ../K3OpEenRij/qtk3opeenrijinstructionsdialog.cpp
 
 HEADERS  += \
-    ../../Games/GameK3OpEenRij/qtk3opeenrijselectplayerwidget.h \
-#    ../../Games/GameK3OpEenRij/qtk3opeenrijresources.h \
-    ../../Games/GameK3OpEenRij/qtk3opeenrijmenudialog.h \
-    ../../Games/GameK3OpEenRij/qtk3opeenrijinstructionsdialog.h
-
-#Moved to GameK3OpEenRijConsole.pri
-# RESOURCES += \
-#     ../../Games/GameK3OpEenRij/GameK3OpEenRij.qrc
+    ../K3OpEenRij/qtk3opeenrijselectplayerwidget.h \
+    ../K3OpEenRij/qtk3opeenrijmenudialog.h \
+    ../K3OpEenRij/qtk3opeenrijinstructionsdialog.h
 
 FORMS += \
-    ../../Games/GameK3OpEenRij/qtk3opeenrijmenudialog.ui \
-    ../../Games/GameK3OpEenRij/qtk3opeenrijinstructionsdialog.ui
+    ../K3OpEenRij/qtk3opeenrijmenudialog.ui \
+    ../K3OpEenRij/qtk3opeenrijinstructionsdialog.ui
 

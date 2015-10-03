@@ -1,21 +1,17 @@
-include(../../DesktopApplication.pri)
-include(../../Libraries/Boost.pri)
-include(../../Libraries/GeneralConsole.pri)
-include(../../Libraries/GeneralDesktop.pri)
+include(../RibiLibraries/DesktopApplication.pri)
+include(../RibiLibraries/Boost.pri)
+include(../RibiLibraries/GeneralConsole.pri)
+include(../RibiLibraries/GeneralDesktop.pri)
 
 #Specific, console
-include(../../Classes/CppCanvas/CppCanvas.pri)
-include(../../Classes/CppDotMatrix/CppDotMatrix.pri)
-include(../../Classes/CppImageCanvas/CppImageCanvas.pri)
-include(../../Classes/CppConnectThree/CppConnectThree.pri)
-include(../../Classes/CppConnectThreeWidget/CppConnectThreeWidget.pri)
-include(../../Classes/CppTextCanvas/CppTextCanvas.pri)
-include(../../Classes/CppTribool/CppTribool.pri)
+include(../RibiClasses/CppDotMatrix/CppDotMatrix.pri)
+include(../RibiClasses/CppConnectThree/CppConnectThree.pri)
+include(../RibiClasses/CppConnectThreeWidget/CppConnectThreeWidget.pri)
+include(../RibiClasses/CppTribool/CppTribool.pri)
 
 #Specific, desktop
-include(../../Classes/CppQtCanvas/CppQtCanvas.pri)
-include(../../Classes/CppQtConnectThreeWidget/CppQtConnectThreeWidget.pri)
-include(../../Games/GameConnectThree/GameConnectThreeDesktop.pri)
+include(../RibiClasses/CppQtConnectThreeWidget/CppQtConnectThreeWidget.pri)
+include(../ConnectThree/GameConnectThreeDesktop.pri)
 
 include(GameK3OpEenRijDesktop.pri)
 

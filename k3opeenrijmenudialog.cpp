@@ -13,7 +13,7 @@
 
 #include "connectthree.h"
 #include "connectthreewidget.h"
-#include "imagecanvas.h"
+//#include "imagecanvas.h"
 #include "qtk3opeenrijresources.h"
 #include "richelbilderbeekprogram.h"
 #include "testtimer.h"
@@ -167,10 +167,13 @@ void ribi::K3OpEenRijMenuDialog::Show(const int girl_index) const noexcept
   assert(girl_index >= 0);
   const std::string filename = r.GetPlayersFilenames()[girl_index == 3 ? 2 : girl_index];
   QtK3OpEenRijResources::CreateFile(filename);
+  /*
   const boost::shared_ptr<ImageCanvas> canvas {
     new ImageCanvas(filename,78)
   };
   std::cout << (*canvas) << std::endl;
+  */
+  assert(!"TODO");
 }
 
 #ifndef NDEBUG
