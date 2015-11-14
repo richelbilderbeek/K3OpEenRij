@@ -8,7 +8,7 @@ include(../RibiClasses/CppConnectThree/CppConnectThree.pri)
 include(../RibiClasses/CppConnectThreeWidget/CppConnectThreeWidget.pri)
 include(../RibiClasses/CppDotMatrix/CppDotMatrix.pri)
 include(../RibiClasses/CppTribool/CppTribool.pri)
-include(../ConnectThree/GameConnectThreeConsole.pri)
+include(../ConnectThree/ConnectThreeConsole.pri)
 
 include(K3OpEenRijConsole.pri)
 

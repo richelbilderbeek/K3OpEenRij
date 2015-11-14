@@ -14,12 +14,12 @@
 #include "trace.h"
 #pragma GCC diagnostic pop
 
-ribi::QtK3OpEenRijMenuDialog::QtK3OpEenRijMenuDialog(
-  const boost::shared_ptr<const QtK3OpEenRijResources> resources,
-  QWidget *parent) noexcept
-  : QtHideAndShowDialog(parent),
+ribi::koer::QtK3OpEenRijMenuDialog::QtK3OpEenRijMenuDialog(
+  const QtK3OpEenRijResources& resources,
+  QWidget *parent
+) noexcept : QtHideAndShowDialog(parent),
     ui(new Ui::QtK3OpEenRijMenuDialog),
-    m_select(new QtK3OpEenRijSelectPlayerWidget(resources)),
+    m_select(new QtK3OpEenRijSelectPlayerWidget(resources,this)),
     m_resources{resources}
 {
   #ifndef NDEBUG
@@ -27,20 +27,39 @@ ribi::QtK3OpEenRijMenuDialog::QtK3OpEenRijMenuDialog(
   #endif
 
   ui->setupUi(this);
-  ui->layout_horizontal->addWidget(m_select.get());
+  ui->layout_horizontal->addWidget(m_select);
 }
 
-ribi::QtK3OpEenRijMenuDialog::~QtK3OpEenRijMenuDialog() noexcept
+ribi::koer::QtK3OpEenRijMenuDialog::~QtK3OpEenRijMenuDialog() noexcept
 {
   delete ui;
-
-  //Clean up all resources
-  m_resources->RemoveFiles();
 }
 
-void ribi::QtK3OpEenRijMenuDialog::on_button_about_clicked() noexcept
+ribi::con3::Resources ribi::koer::Convert(
+  const QtK3OpEenRijResources r,
+  const BlackHairedGirl black,
+  const BlondeGirl blond,
+  const RedHairedGirl red
+)
 {
-  About about = K3OpEenRijMenuDialog().GetAbout();
+  return ribi::con3::Resources(
+    r.GetComputerFilenames(),
+    r.GetComputerGreyFilename(),
+    r.GetCss(),
+    r.GetEmptyFilename(),
+    r.GetIconFilename(),
+    r.GetInstructionsGoodFilenames(),
+    r.GetInstructionsWrongFilename(),
+    r.GetPlayerFilenames(black,blond,red),
+    r.GetPlayerGreyFilenames(black,blond,red),
+    r.GetQuitText(),
+    r.GetWinnerText()
+  );
+}
+
+void ribi::koer::QtK3OpEenRijMenuDialog::on_button_about_clicked() noexcept
+{
+  About about = MenuDialog().GetAbout();
   about.AddLibrary("QtConnectThreeWidget version: " + con3::QtConnectThreeWidget::GetVersion());
   QtAboutDialog d(about);
   d.setStyleSheet(this->styleSheet());
@@ -48,31 +67,30 @@ void ribi::QtK3OpEenRijMenuDialog::on_button_about_clicked() noexcept
   this->ShowChild(&d);
 }
 
-void ribi::QtK3OpEenRijMenuDialog::on_button_instructions_clicked() noexcept
+void ribi::koer::QtK3OpEenRijMenuDialog::on_button_instructions_clicked() noexcept
 {
   QtK3OpEenRijInstructionsDialog d;
   this->ShowChild(&d);
 }
 
-void ribi::QtK3OpEenRijMenuDialog::on_button_quit_clicked() noexcept
+void ribi::koer::QtK3OpEenRijMenuDialog::on_button_quit_clicked() noexcept
 {
   close();
 }
 
-void ribi::QtK3OpEenRijMenuDialog::on_button_start_clicked() noexcept
+void ribi::koer::QtK3OpEenRijMenuDialog::on_button_start_clicked() noexcept
 {
   //Supply the correct resources, depending on if player 3 chose Kathleen or Josje
-  const boost::shared_ptr<QtK3OpEenRijResources> resources(
-    new QtK3OpEenRijResources(
-      m_select->GetIsPlayer3Kathleen()
-      ? Tribool::True
-      : Tribool::False
+  ribi::con3::Resources resources =
+    Convert(
+      m_resources,
+      m_select->GetBlack(),
+      m_select->GetBlond(),
+      m_select->GetRed()
     )
-  );
-
-  con3::QtConnectThreeGameDialog d(
+  ;
+  con3::QtGameDialog d(
     resources,
-    nullptr,
     m_select->GetIsPlayerHuman()
   );
   d.setWindowTitle("K3OpEenRij");
@@ -82,7 +100,7 @@ void ribi::QtK3OpEenRijMenuDialog::on_button_start_clicked() noexcept
 }
 
 #ifndef NDEBUG
-void ribi::QtK3OpEenRijMenuDialog::Test() noexcept
+void ribi::koer::QtK3OpEenRijMenuDialog::Test() noexcept
 {
   {
     static bool is_tested{false};
@@ -90,15 +108,15 @@ void ribi::QtK3OpEenRijMenuDialog::Test() noexcept
     is_tested = true;
   }
   {
-    const boost::shared_ptr<const QtK3OpEenRijResources> resources(new QtK3OpEenRijResources);
+    const ribi::con3::Resources resources;
     con3::QtConnectThreeWidget widget(resources);
-    con3::QtConnectThreeGameDialog d(resources,nullptr,std::bitset<3>(false));
+    con3::QtGameDialog d(resources,std::bitset<3>(false));
   }
   {
     QtK3OpEenRijInstructionsDialog d;
   }
   {
-    About about = K3OpEenRijMenuDialog().GetAbout();
+    About about = MenuDialog().GetAbout();
     QtAboutDialog d(about);
   }
   const TestTimer test_timer(__func__,__FILE__,1.0);

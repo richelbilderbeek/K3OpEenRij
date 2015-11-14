@@ -8,6 +8,7 @@ namespace Ui {
 }
 
 namespace ribi {
+namespace koer {
 
 class QtK3OpEenRijInstructionsDialog : public QtHideAndShowDialog
 {
@@ -23,6 +24,7 @@ private:
   Ui::QtK3OpEenRijInstructionsDialog *ui;
 };
 
+} //~namespace koer
 } //~namespace ribi
 
 #endif // QTK3OPEENRIJINSTRUCTIONSDIALOG_H

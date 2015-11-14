@@ -11,7 +11,7 @@ include(../RibiClasses/CppTribool/CppTribool.pri)
 
 #Specific, desktop
 include(../RibiClasses/CppQtConnectThreeWidget/CppQtConnectThreeWidget.pri)
-include(../ConnectThree/GameConnectThreeDesktop.pri)
+include(../ConnectThree/ConnectThreeDesktop.pri)
 
 include(K3OpEenRijDesktop.pri)
 

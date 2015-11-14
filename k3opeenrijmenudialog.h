@@ -4,8 +4,9 @@
 #include "menudialog.h"
 
 namespace ribi {
+namespace koer {
 
-struct K3OpEenRijMenuDialog final : public MenuDialog
+struct MenuDialog final : public ::ribi::MenuDialog
 {
   About GetAbout() const noexcept override;
   Help GetHelp() const noexcept override;
@@ -15,13 +16,12 @@ struct K3OpEenRijMenuDialog final : public MenuDialog
   private:
   int ExecuteSpecific(const std::vector<std::string>& argv) noexcept override;
 
-  void Show(const int girl_index) const noexcept;
-
   #ifndef NDEBUG
   static void Test() noexcept;
   #endif
 };
 
+} //~namespace koer
 } //~namespace ribi
 
 #endif // K3OPEENRIJMENUDIALOG_H

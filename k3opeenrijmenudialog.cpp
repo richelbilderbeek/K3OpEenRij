@@ -10,7 +10,7 @@
 #include <stdexcept>
 
 
-#include "connectthree.h"
+#include "connectthreegame.h"
 #include "connectthreewidget.h"
 #include "qtk3opeenrijresources.h"
 #include "richelbilderbeekprogram.h"
@@ -18,7 +18,7 @@
 #include "trace.h"
 #pragma GCC diagnostic pop
 
-int ribi::K3OpEenRijMenuDialog::ExecuteSpecific(const std::vector<std::string>& argv) noexcept
+int ribi::koer::MenuDialog::ExecuteSpecific(const std::vector<std::string>& argv) noexcept
 {
   using namespace ::ribi::con3;
   #ifndef NDEBUG
@@ -31,15 +31,13 @@ int ribi::K3OpEenRijMenuDialog::ExecuteSpecific(const std::vector<std::string>& 
   {
 
     //Play a ConnectThreeGame, but change the graphics
-    boost::shared_ptr<ConnectThree> c {
-      new ConnectThree(15,5)
-    };
+    Game c(15,5);
     const std::bitset<3> is_player_human(0);
-    while (c->GetWinner() == Winner::no_winner)
+    while (c.GetWinner() == Winner::no_winner)
     {
-      c->DoMove(c->SuggestMove(is_player_human));
+      c.DoMove(c.SuggestMove(is_player_human));
       std::stringstream s;
-      s << (*c);
+      s << c;
       std::string t { s.str() };
       //Replace
       std::replace(t.begin(),t.end(),'1','K'); //Karen
@@ -49,7 +47,7 @@ int ribi::K3OpEenRijMenuDialog::ExecuteSpecific(const std::vector<std::string>& 
         << std::endl;
     }
 
-    switch (c->GetWinner())
+    switch (c.GetWinner())
     {
       case Winner::player1  : std::cout << "Karen won the game"; break;
       case Winner::player2  : std::cout << "Kristel won the game"; break;
@@ -63,26 +61,6 @@ int ribi::K3OpEenRijMenuDialog::ExecuteSpecific(const std::vector<std::string>& 
     std::cout << std::endl;
     return 0;
   }
-  else if (argc == 2 && (argv[1] == "-1" || argv[1] == "--Karen"))
-  {
-    Show(0);
-    return 0;
-  }
-  else if (argc == 2 && (argv[1] == "-2" || argv[1] == "--Kristel"))
-  {
-    Show(1);
-    return 0;
-  }
-  else if (argc == 2 && (argv[1] == "-3" || argv[1] == "--Josje"))
-  {
-    Show(2);
-    return 0;
-  }
-  else if (argc == 2 && (argv[1] == "-4" || argv[1] == "--Kathleen"))
-  {
-    Show(3);
-    return 0;
-  }
   else
   {
     std::cout << GetHelp() << '\n';
@@ -90,7 +68,7 @@ int ribi::K3OpEenRijMenuDialog::ExecuteSpecific(const std::vector<std::string>& 
   }
 }
 
-ribi::About ribi::K3OpEenRijMenuDialog::GetAbout() const noexcept
+ribi::About ribi::koer::MenuDialog::GetAbout() const noexcept
 {
   About a(
     "Richel Bilderbeek",
@@ -101,40 +79,34 @@ ribi::About ribi::K3OpEenRijMenuDialog::GetAbout() const noexcept
     "http://www.richelbilderbeek.nl/GameK3OpEenRij.htm",
     GetVersion(),
     GetVersionHistory());
-  a.AddLibrary("ConnectThree version: " + con3::ConnectThree::GetVersion());
+  a.AddLibrary("ConnectThree version: " + con3::Game::GetVersion());
   a.AddLibrary("ConnectThreeWidget version: " + con3::ConnectThreeWidget::GetVersion());
   a.AddLibrary("TestTimer version: " + TestTimer::GetVersion());
   a.AddLibrary("Special thanks to Mark Wiering for his excellent bug reports");
   return a;
 }
 
-ribi::Help ribi::K3OpEenRijMenuDialog::GetHelp() const noexcept
+ribi::Help ribi::koer::MenuDialog::GetHelp() const noexcept
 {
   return Help(
     GetAbout().GetFileTitle(),
     GetAbout().GetFileDescription(),
     {
-      Help::Option('d',"demo","Display a demo game"),
-      Help::Option('1',"Karen","Display Karen"),
-      Help::Option('2',"Kristel","Display Kristel"),
-      Help::Option('3',"Josje","Display Josje"),
-      Help::Option('4',"Kathleen","Display Kathleen")
+      Help::Option('d',"demo","Display a demo game")
     },
     {
       GetAbout().GetFileTitle() + " -d",
-      GetAbout().GetFileTitle() + " --demo",
-      GetAbout().GetFileTitle() + " -1",
-      GetAbout().GetFileTitle() + " --Karen"
+      GetAbout().GetFileTitle() + " --demo"
     }
   );
 }
 
-std::string ribi::K3OpEenRijMenuDialog::GetVersion() const noexcept
+std::string ribi::koer::MenuDialog::GetVersion() const noexcept
 {
   return "7.0";
 }
 
-std::vector<std::string> ribi::K3OpEenRijMenuDialog::GetVersionHistory() const noexcept
+std::vector<std::string> ribi::koer::MenuDialog::GetVersionHistory() const noexcept
 {
   return {
     "2007-01-03: version 3.0: initial C++ Builder verion",
@@ -149,25 +121,8 @@ std::vector<std::string> ribi::K3OpEenRijMenuDialog::GetVersionHistory() const n
   };
 }
 
-void ribi::K3OpEenRijMenuDialog::Show(const int girl_index) const noexcept
-{
-  QtK3OpEenRijResources r(girl_index == 3 ? Tribool::True : Tribool::False);
-  assert(r.GetPlayersFilenames().size() == 3);
-  assert(girl_index >= 0);
-  assert(girl_index >= 0);
-  const std::string filename = r.GetPlayersFilenames()[girl_index == 3 ? 2 : girl_index];
-  QtK3OpEenRijResources::CreateFile(filename);
-  /*
-  const boost::shared_ptr<ImageCanvas> canvas {
-    new ImageCanvas(filename,78)
-  };
-  std::cout << (*canvas) << std::endl;
-  */
-  assert(!"TODO");
-}
-
 #ifndef NDEBUG
-void ribi::K3OpEenRijMenuDialog::Test() noexcept
+void ribi::koer::MenuDialog::Test() noexcept
 {
   {
     static bool is_tested{false};
@@ -175,13 +130,11 @@ void ribi::K3OpEenRijMenuDialog::Test() noexcept
     is_tested = true;
   }
   const TestTimer test_timer(__func__,__FILE__,1.0);
-  boost::shared_ptr<con3::ConnectThree> c {
-    new con3::ConnectThree(15,5)
-  };
+  ribi::con3::Game c(15,5);
   const std::bitset<3> is_player_human(0);
-  while (c->GetWinner() == con3::Winner::no_winner)
+  while (c.GetWinner() == con3::Winner::no_winner)
   {
-    c->DoMove(c->SuggestMove(is_player_human));
+    c.DoMove(c.SuggestMove(is_player_human));
   }
 }
 #endif

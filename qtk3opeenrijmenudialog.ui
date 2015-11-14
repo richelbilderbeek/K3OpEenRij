@@ -20,7 +20,7 @@
    <string>K3OpEenRij</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="../GameConnectThree/GameConnectThree.qrc">
+   <iconset resource="../ConnectThree/ConnectThree.qrc">
     <normaloff>:/images/R.png</normaloff>:/images/R.png</iconset>
   </property>
   <property name="styleSheet">
@@ -103,7 +103,7 @@ QPushButton { font: 32px, &quot;monospace&quot; }
   </layout>
  </widget>
  <resources>
-  <include location="../GameConnectThree/GameConnectThree.qrc"/>
+  <include location="../ConnectThree/ConnectThree.qrc"/>
  </resources>
  <connections/>
 </ui>

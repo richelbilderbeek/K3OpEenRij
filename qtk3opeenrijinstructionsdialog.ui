@@ -38,7 +38,7 @@ QLabel { font: 32px, &quot;monospace&quot; }
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="GameK3OpEenRij.qrc">:/images/K3OpEenRijInstructions2.png</pixmap>
+      <pixmap resource="K3OpEenRij.qrc">:/images/K3OpEenRijInstructions2.png</pixmap>
      </property>
     </widget>
    </item>
@@ -58,7 +58,7 @@ QLabel { font: 32px, &quot;monospace&quot; }
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="GameK3OpEenRij.qrc">:/images/K3OpEenRijInstructions1.png</pixmap>
+      <pixmap resource="K3OpEenRij.qrc">:/images/K3OpEenRijInstructions1.png</pixmap>
      </property>
     </widget>
    </item>
@@ -91,7 +91,7 @@ QLabel { font: 32px, &quot;monospace&quot; }
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="GameK3OpEenRij.qrc">:/images/K3OpEenRijKiesKathleen.png</pixmap>
+      <pixmap resource="K3OpEenRij.qrc">:/images/K3OpEenRijKiesKathleen.png</pixmap>
      </property>
     </widget>
    </item>
@@ -118,7 +118,7 @@ QLabel { font: 32px, &quot;monospace&quot; }
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="GameK3OpEenRij.qrc">:/images/K3OpEenRijInstructions3.png</pixmap>
+      <pixmap resource="K3OpEenRij.qrc">:/images/K3OpEenRijInstructions3.png</pixmap>
      </property>
     </widget>
    </item>
@@ -128,7 +128,7 @@ QLabel { font: 32px, &quot;monospace&quot; }
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="GameK3OpEenRij.qrc">:/images/K3OpEenRijKiesJosje.png</pixmap>
+      <pixmap resource="K3OpEenRij.qrc">:/images/K3OpEenRijKiesJosje.png</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -158,7 +158,7 @@ QLabel { font: 32px, &quot;monospace&quot; }
   </layout>
  </widget>
  <resources>
-  <include location="GameK3OpEenRij.qrc"/>
+  <include location="K3OpEenRij.qrc"/>
  </resources>
  <connections/>
 </ui>

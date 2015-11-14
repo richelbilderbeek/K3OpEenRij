@@ -6,8 +6,9 @@
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Weffc++"
-#include <boost/shared_ptr.hpp>
 #include "qthideandshowdialog.h"
+#include "connectthreeresources.h"
+#include "k3opeenrijnames.h"
 #pragma GCC diagnostic pop
 
 namespace Ui {
@@ -15,6 +16,7 @@ namespace Ui {
 }
 
 namespace ribi {
+namespace koer {
 
 struct QtK3OpEenRijSelectPlayerWidget;
 struct QtK3OpEenRijResources;
@@ -26,16 +28,17 @@ class QtK3OpEenRijMenuDialog : public ribi::QtHideAndShowDialog
 public:
   ///Won't throw, as all resources are present
   explicit QtK3OpEenRijMenuDialog(
-    const boost::shared_ptr<const QtK3OpEenRijResources> resources,
-    QWidget *parent = 0) noexcept;
+    const QtK3OpEenRijResources& resources,
+    QWidget *parent = 0
+  ) noexcept;
   QtK3OpEenRijMenuDialog(const QtK3OpEenRijMenuDialog&) = delete;
   QtK3OpEenRijMenuDialog& operator=(const QtK3OpEenRijMenuDialog&) = delete;
   ~QtK3OpEenRijMenuDialog() noexcept;
 
 private:
   Ui::QtK3OpEenRijMenuDialog *ui;
-  boost::shared_ptr<QtK3OpEenRijSelectPlayerWidget> m_select;
-  const boost::shared_ptr<const QtK3OpEenRijResources> m_resources;
+  QtK3OpEenRijSelectPlayerWidget * m_select;
+  const QtK3OpEenRijResources& m_resources;
 
 private slots:
 
@@ -50,6 +53,14 @@ private slots:
 
 };
 
+ribi::con3::Resources Convert(
+  const QtK3OpEenRijResources r,
+  const BlackHairedGirl black,
+  const BlondeGirl blond,
+  const RedHairedGirl red
+);
+
+} //~namespace koer
 } //~namespace ribi
 
 #endif // QTK3OPEENRIJMENUDIALOG_H

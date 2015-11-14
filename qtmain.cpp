@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 /*
-GameConnectThree, connect-three game
-Copyright (C) 2010-2013 Richel Bilderbeek
+K3-Op-Een-Rij, connect-three game with K3 theme
+Copyright (C) 2007-2015 Richel Bilderbeek
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -16,17 +16,16 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 //---------------------------------------------------------------------------
-//From http://www.richelbilderbeek.nl/GameConnectThree.htm
+//From http://www.richelbilderbeek.nl/GameK3OpEenRij.htm
 //---------------------------------------------------------------------------
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Weffc++"
 #include <QApplication>
 
-#include <boost/shared_ptr.hpp>
-
 #include <QIcon>
 #include <QFile>
 #include <QPixmap>
+#include <cassert>
 #include "qtk3opeenrijresources.h"
 #include "qtk3opeenrijmenudialog.h"
 #include "trace.h"
@@ -77,12 +76,11 @@ int main(int argc, char *argv[])
   QApplication a(argc, argv);
 
   START_TRACE();
-  const boost::shared_ptr<const ribi::QtK3OpEenRijResources> resources(new ribi::QtK3OpEenRijResources);
-  ribi::QtK3OpEenRijMenuDialog w(resources);
+  const ribi::koer::QtK3OpEenRijResources resources;
+  ribi::koer::QtK3OpEenRijMenuDialog w(resources);
 
   {
-    const ribi::QtK3OpEenRijResources resources2;
-    const std::string icon_filename = resources2.GetIconFilename();
+    const std::string icon_filename = resources.GetIconFilename();
     assert(QFile::exists(icon_filename.c_str()));
     qApp->setWindowIcon(QIcon(QPixmap(icon_filename.c_str())));
     w.setWindowIcon(QIcon(QPixmap(icon_filename.c_str())));
