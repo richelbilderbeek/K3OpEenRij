@@ -1,4 +1,4 @@
-include(../K3OpEenRij/GameK3OpEenRijConsole.pri)
+include(../K3OpEenRij/K3OpEenRijConsole.pri)
 
 SOURCES += \
     ../K3OpEenRij/qtk3opeenrijselectplayerwidget.cpp \

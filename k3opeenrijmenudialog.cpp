@@ -9,11 +9,9 @@
 #include <sstream>
 #include <stdexcept>
 
-//#include <QPixmap>
 
 #include "connectthree.h"
 #include "connectthreewidget.h"
-//#include "imagecanvas.h"
 #include "qtk3opeenrijresources.h"
 #include "richelbilderbeekprogram.h"
 #include "testtimer.h"
@@ -98,7 +96,7 @@ ribi::About ribi::K3OpEenRijMenuDialog::GetAbout() const noexcept
     "Richel Bilderbeek",
     "K3OpEenRij",
     "K3-themed connect-three game",
-    "the 6th of August 2013",
+    "the 14th of November 2015",
     "2007-2015",
     "http://www.richelbilderbeek.nl/GameK3OpEenRij.htm",
     GetVersion(),
@@ -131,18 +129,9 @@ ribi::Help ribi::K3OpEenRijMenuDialog::GetHelp() const noexcept
   );
 }
 
-boost::shared_ptr<const ribi::Program> ribi::K3OpEenRijMenuDialog::GetProgram() const noexcept
-{
-  const boost::shared_ptr<const ribi::Program> p {
-    new ProgramK3OpEenRij
-  };
-  assert(p);
-  return p;
-}
-
 std::string ribi::K3OpEenRijMenuDialog::GetVersion() const noexcept
 {
-  return "6.3";
+  return "7.0";
 }
 
 std::vector<std::string> ribi::K3OpEenRijMenuDialog::GetVersionHistory() const noexcept
@@ -156,6 +145,7 @@ std::vector<std::string> ribi::K3OpEenRijMenuDialog::GetVersionHistory() const n
     "2014-01-23: version 6.1: added command line demo",
     "2014-01-30: version 6.2: added extra command line option to display the artists",
     "2015-06-09: version 6.3: show how to choose Kathleen in the menu screen, clean up files when program closes",
+    "2015-11-14: version 7.0: moved to own GitHub, added pictures of new K3"
   };
 }
 

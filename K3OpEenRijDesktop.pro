@@ -13,6 +13,6 @@ include(../RibiClasses/CppTribool/CppTribool.pri)
 include(../RibiClasses/CppQtConnectThreeWidget/CppQtConnectThreeWidget.pri)
 include(../ConnectThree/GameConnectThreeDesktop.pri)
 
-include(GameK3OpEenRijDesktop.pri)
+include(K3OpEenRijDesktop.pri)
 
 SOURCES += qtmain.cpp
