@@ -1,27 +1,23 @@
 #!/bin/bash
-myqmake="../../Libraries/mxe/usr/i686-pc-mingw32/qt5/bin/qmake"
- 
-#Cleaning up
-rm *.pro.user
-rm Makefile
-rm Makefile.*
-rm -r release
-rm -r debug
-rm ui_*.h
-rm qrc_*.cpp
-rm moc_*.cpp
-rm object_script*.*
-rm *_plugin_import.cpp
+#MY_QMAKE="../RibiLibraries/mxe/usr/i686-w64-mingw32.static/qt5/bin/qmake"
+MY_QMAKE="../RibiLibraries/mxe/usr/bin/i686-w64-mingw32.static-qmake-qt5"
+
+
+if [ ! -e $MY_QMAKE ]
+then
+  echo "FAIL: qmake not found at path: "$MY_QMAKE
+  exit
+fi
  
 for myprofile in `ls | egrep ".pro\>"`
 do
   mytarget=`echo $myprofile | sed "s/\.pro//"`
    
-  $myqmake $myprofile
+  $MY_QMAKE $myprofile
    
   if [ ! -e Makefile ]
   then
-    echo "FAIL: $myqmake $myprofile"
+    echo "FAIL: $MY_QMAKE $myprofile"
   fi
    
   make
@@ -34,15 +30,4 @@ do
     echo $mytarget": FAIL"
   fi
    
-  #Cleaning up
-  rm Makefile
-  rm Makefile.*
-  rm -r release
-  rm -r debug
-  rm ui_*.h
-  rm qrc_*.cpp
-  rm moc_*.cpp
-  rm object_script*.*
-  rm *_plugin_import.cpp
-
 done #next .pro file
