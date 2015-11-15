@@ -10,7 +10,7 @@ K3-themed game of connect-three programmed in C++ using Qt and Wt (see 'About th
 
 # About the program
 
-K3-Op-Een-Rij is programmed in C++14 using the STL, Boost, Qt (for the desktop version) and Wt (for the website version) libraries.
+K3-Op-Een-Rij is programmed in C++14 using the STL, Boost, [Qt](http://www.qt.io) (for the desktop version) and [Wt](http://www.webtoolkit.eu/wt) (for the website version) libraries.
 
 K3-Op-Een-Rij is cross-compiled using [MXE](http://mxe.cc) in the bash shell scripts.
 
