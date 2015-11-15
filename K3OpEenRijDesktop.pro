@@ -16,3 +16,6 @@ include(../ConnectThree/ConnectThreeDesktop.pri)
 include(K3OpEenRijDesktop.pri)
 
 SOURCES += qtmain.cpp
+
+win32:RC_ICONS += K3OpEenRijIcon.ico
+#win32:RC_ICONS += :/images/K3OpEenRijIcon.ico
