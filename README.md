@@ -23,6 +23,10 @@ You can collaborate by
  * add a GitHub issue: this can be a question, suggestion, or whatever
  * fork this repository, make the changes, and submit a pull request. 
 
+# Value of project
+
+Assuming Dutch minimum wages, using David A. Wheeler's 'SLOCCount': see [the K3-Op-Een-Rij SLOCCount].
+
 # Screenshot archive
 
 The most recent screenshots are at the top.
