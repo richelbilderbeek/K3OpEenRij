@@ -23,10 +23,6 @@ You can collaborate by
  * add a GitHub issue: this can be a question, suggestion, or whatever
  * fork this repository, make the changes, and submit a pull request. 
 
-# Value of project
-
-Assuming Dutch minimum wages, using David A. Wheeler's 'SLOCCount': see [the K3-Op-Een-Rij SLOCCount](K3OpEenRijSloccount.txt).
-
 # Screenshot archive
 
 The most recent screenshots are at the top.
@@ -48,3 +44,7 @@ The most recent screenshots are at the top.
 ![K3-Op-Een-Rij game version 4.0](Screenshots/K3OpEenRij_4_0.png)
 
 ![K3-Op-Een-Rij game version 3.0](Screenshots/K3OpEenRij_3_0.png)
+
+# Value of project
+
+Assuming Dutch minimum wages, using David A. Wheeler's 'SLOCCount': see [the K3-Op-Een-Rij SLOCCount](K3OpEenRijSloccount.txt).
