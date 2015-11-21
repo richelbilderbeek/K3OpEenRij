@@ -1,91 +1,4 @@
-Have a non-directory at the top, so creating directory top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRij.css to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRij.qrc to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijBackground.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijBackgroundColored.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijBackgroundGrey.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijClean.sh to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijComputer1.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijComputer2.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijComputer3.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijComputerGrey.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijConsole.pri to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijConsole.pro to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijCrosscompile.sh to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijDesktop.pri to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijDesktop.pro to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijDesktop.pro.user to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijDesktop_resource.rc to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijEmpty.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijHanne.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijHanneGrey.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijIcon.ico to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijIcon.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijInstructions1.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijInstructions2.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijInstructions3.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijJosje.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijJosjeGrey.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijKaren.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijKarenGrey.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijKathleen.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijKathleenGrey.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijKiesJosje.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijKiesKathleen.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijKlaasje.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijKlaasjeGrey.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijKristel.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijKristelGrey.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijMarthe.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijMartheGrey.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijSloccount.sh to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijSloccount.txt to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijWebsite.pri to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/K3OpEenRijWebsite.pro to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/LICENSE to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/Licence.txt to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/Makefile to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/Makefile.Debug to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/Makefile.Release to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/R.png to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/README.md to top_dir
-Creating filelist for Screenshots
-Creating filelist for debug
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/k3opeenrijconsole_plugin_import.cpp to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/k3opeenrijdesktop_plugin_import.cpp to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/k3opeenrijmenudialog.cpp to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/k3opeenrijmenudialog.h to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/k3opeenrijnames.cpp to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/k3opeenrijnames.h to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/k3opeenrijwebsite_plugin_import.cpp to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/main.cpp to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/mainwt.cpp to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/object_script.K3OpEenRijConsole.Debug to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/object_script.K3OpEenRijConsole.Release to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/object_script.K3OpEenRijDesktop.Debug to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/object_script.K3OpEenRijDesktop.Release to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/object_script.K3OpEenRijWebsite.Debug to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/object_script.K3OpEenRijWebsite.Release to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/qtk3opeenrijinstructionsdialog.cpp to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/qtk3opeenrijinstructionsdialog.h to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/qtk3opeenrijinstructionsdialog.ui to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/qtk3opeenrijmenudialog.cpp to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/qtk3opeenrijmenudialog.h to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/qtk3opeenrijmenudialog.ui to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/qtk3opeenrijresources.cpp to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/qtk3opeenrijresources.h to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/qtk3opeenrijselectplayerwidget.cpp to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/qtk3opeenrijselectplayerwidget.h to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/qtmain.cpp to top_dir
-Creating filelist for release
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/ui_qtaboutdialog.h to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/ui_qtconnectthreegamedialog.h to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/ui_qtconnectthreemenudialog.h to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/ui_qtk3opeenrijinstructionsdialog.h to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/ui_qtk3opeenrijmenudialog.h to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/ui_qtshowwinnerdialog.h to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/wtmain.cpp to top_dir
-Adding /home/maakplek/GitHubs/K3OpEenRij/../K3OpEenRij/zip.sh to top_dir
+Creating filelist for K3OpEenRij
 Categorizing files.
 Finding a working MD5 command....
 Found a working MD5 command.
@@ -93,26 +6,23 @@ Computing results.
 
 
 SLOC	Directory	SLOC-by-Language (Sorted)
-56147   release         cpp=56147
-1691    top_dir         cpp=1535,sh=156
-0       Screenshots     (none)
-0       debug           (none)
+1377    K3OpEenRij      cpp=958,sh=419
 
 
 Totals grouped by language (dominant language first):
-cpp:          57682 (99.73%)
-sh:             156 (0.27%)
+cpp:            958 (69.57%)
+sh:             419 (30.43%)
 
 
 
 
-Total Physical Source Lines of Code (SLOC)                = 57,838
-Development Effort Estimate, Person-Years (Person-Months) = 14.17 (170.03)
+Total Physical Source Lines of Code (SLOC)                = 1,377
+Development Effort Estimate, Person-Years (Person-Months) = 0.28 (3.36)
  (Basic COCOMO model, Person-Months = 2.4 * (KSLOC**1.05))
-Schedule Estimate, Years (Months)                         = 1.47 (17.60)
+Schedule Estimate, Years (Months)                         = 0.33 (3.96)
  (Basic COCOMO model, Months = 2.5 * (person-months**0.38))
-Estimated Average Number of Developers (Effort/Schedule)  = 9.66
-Total Estimated Cost to Develop                           = $ 325,821
+Estimated Average Number of Developers (Effort/Schedule)  = 0.85
+Total Estimated Cost to Develop                           = $ 6,435
  (average salary = $22,994.56/year, overhead = 1.00).
 SLOCCount, Copyright (C) 2001-2004 David A. Wheeler
 SLOCCount is Open Source Software/Free Software, licensed under the GNU GPL.
