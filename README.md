@@ -25,7 +25,7 @@ You can collaborate by
 
 # Value of project
 
-Assuming Dutch minimum wages, using David A. Wheeler's 'SLOCCount': see [the K3-Op-Een-Rij SLOCCount].
+Assuming Dutch minimum wages, using David A. Wheeler's 'SLOCCount': see [the K3-Op-Een-Rij SLOCCount](K3OpEenRijSloccount.txt).
 
 # Screenshot archive
 
