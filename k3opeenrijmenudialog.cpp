@@ -13,7 +13,6 @@
 #include "connectthreegame.h"
 #include "connectthreewidget.h"
 #include "qtk3opeenrijresources.h"
-#include "richelbilderbeekprogram.h"
 #include "testtimer.h"
 #include "trace.h"
 #pragma GCC diagnostic pop
