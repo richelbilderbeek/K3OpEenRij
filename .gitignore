@@ -36,3 +36,4 @@ object_script_*
 *_plugin_import_.cpp
 object_script*
 *_plugin_import.cpp
+*_resource.rc
