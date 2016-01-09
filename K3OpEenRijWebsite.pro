@@ -14,7 +14,7 @@ include(../RibiClasses/CppTribool/CppTribool.pri)
 #Specific, web
 include(K3OpEenRijWebsite.pri)
 include(../RibiClasses/CppWtConnectThreeWidget/CppWtConnectThreeWidget.pri)
-include(../ConnectThree/GameConnectThreeWebsite.pri)
+include(../ConnectThree/ConnectThreeWebsite.pri)
 
 SOURCES += wtmain.cpp
 
