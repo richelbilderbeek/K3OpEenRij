@@ -24,3 +24,8 @@ SOURCES += qtmain.cpp
 
 win32:RC_ICONS += K3OpEenRijIcon.ico
 #win32:RC_ICONS += :/images/K3OpEenRijIcon.ico
+
+# Prevent Qt for failing with this error:
+# qrc_[*].cpp:400:44: error: ‘qInitResources_[*]__init_variable__’ defined but not used
+# [*]: the resource filename
+QMAKE_CXXFLAGS += -Wno-unused-variable
