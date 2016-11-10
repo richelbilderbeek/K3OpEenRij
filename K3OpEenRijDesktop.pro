@@ -1,16 +1,21 @@
-include(../RibiLibraries/DesktopApplication.pri)
+include(../RibiLibraries/DesktopApplicationNoWeffcpp.pri)
 include(../RibiLibraries/Boost.pri)
-include(../RibiLibraries/GeneralConsole.pri)
+
+include(../RibiClasses/CppAbout/CppAbout.pri)
+include(../RibiClasses/CppFileIo/CppFileIo.pri)
+include(../RibiClasses/CppHelp/CppHelp.pri)
+include(../RibiClasses/CppMenuDialog/CppMenuDialog.pri)
+
 include(../RibiLibraries/GeneralDesktop.pri)
 
 #Specific, console
-include(../RibiClasses/CppDotMatrix/CppDotMatrix.pri)
-include(../RibiClasses/CppConnectThree/CppConnectThree.pri)
-include(../RibiClasses/CppConnectThreeWidget/CppConnectThreeWidget.pri)
+include(../DotMatrix/DotMatrix.pri)
+include(../ConnectThree/CppConnectThree.pri)
+include(../ConnectThree/CppConnectThreeWidget.pri)
 include(../RibiClasses/CppTribool/CppTribool.pri)
 
 #Specific, desktop
-include(../RibiClasses/CppQtConnectThreeWidget/CppQtConnectThreeWidget.pri)
+include(../ConnectThree/QtConnectThreeWidget.pri)
 include(../ConnectThree/ConnectThreeDesktop.pri)
 
 include(K3OpEenRijDesktop.pri)

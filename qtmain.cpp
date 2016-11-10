@@ -28,7 +28,6 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 #include <cassert>
 #include "qtk3opeenrijresources.h"
 #include "qtk3opeenrijmenudialog.h"
-#include "trace.h"
 #pragma GCC diagnostic pop
 
 const std::string CreateStyleSheet()
@@ -75,7 +74,6 @@ int main(int argc, char *argv[])
 {
   QApplication a(argc, argv);
 
-  START_TRACE();
   const ribi::koer::QtK3OpEenRijResources resources;
   ribi::koer::QtK3OpEenRijMenuDialog w(resources);
 

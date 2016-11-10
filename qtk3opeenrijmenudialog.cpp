@@ -8,10 +8,8 @@
 #include "qtconnectthreewidget.h"
 #include "qtk3opeenrijresources.h"
 #include "qtk3opeenrijinstructionsdialog.h"
-#include "testtimer.h"
 #include "qtk3opeenrijselectplayerwidget.h"
 #include "ui_qtk3opeenrijmenudialog.h"
-#include "trace.h"
 #pragma GCC diagnostic pop
 
 ribi::koer::QtK3OpEenRijMenuDialog::QtK3OpEenRijMenuDialog(
@@ -119,6 +117,5 @@ void ribi::koer::QtK3OpEenRijMenuDialog::Test() noexcept
     About about = MenuDialog().GetAbout();
     QtAboutDialog d(about);
   }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
 }
 #endif

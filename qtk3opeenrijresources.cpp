@@ -7,7 +7,7 @@
 #include <QFile>
 
 #include "fileio.h"
-#include "trace.h"
+
 #pragma GCC diagnostic pop
 
 ribi::koer::QtK3OpEenRijResources::QtK3OpEenRijResources()
@@ -75,11 +75,9 @@ void ribi::koer::QtK3OpEenRijResources::CreateFile(const std::string& s) const
     {
       const std::string error = "QtK3OpEenRijResources::CreateFile: file not found: '" + s
         + "\', please add the file to a resource file, or correct the filename";
-      TRACE(s);
       throw std::runtime_error(error);
     }
   }
-  if (!fileio::FileIo().IsRegularFile(s)) { TRACE(s); }
   assert(fileio::FileIo().IsRegularFile(s));
 }
 

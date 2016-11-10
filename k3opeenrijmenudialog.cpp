@@ -13,8 +13,8 @@
 #include "connectthreegame.h"
 #include "connectthreewidget.h"
 #include "qtk3opeenrijresources.h"
-#include "testtimer.h"
-#include "trace.h"
+
+
 #pragma GCC diagnostic pop
 
 int ribi::koer::MenuDialog::ExecuteSpecific(const std::vector<std::string>& argv) noexcept
@@ -80,7 +80,6 @@ ribi::About ribi::koer::MenuDialog::GetAbout() const noexcept
     GetVersionHistory());
   a.AddLibrary("ConnectThree version: " + con3::Game::GetVersion());
   a.AddLibrary("ConnectThreeWidget version: " + con3::ConnectThreeWidget::GetVersion());
-  a.AddLibrary("TestTimer version: " + TestTimer::GetVersion());
   a.AddLibrary("Special thanks to Mark Wiering for his excellent bug reports");
   return a;
 }
@@ -128,7 +127,6 @@ void ribi::koer::MenuDialog::Test() noexcept
     if (is_tested) return;
     is_tested = true;
   }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
   ribi::con3::Game c(15,5);
   const std::bitset<3> is_player_human(0);
   while (c.GetWinner() == con3::Winner::no_winner)

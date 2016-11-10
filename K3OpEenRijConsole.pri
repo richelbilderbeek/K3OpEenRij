@@ -2,17 +2,17 @@ INCLUDEPATH += \
     ../K3OpEenRij
 
 SOURCES += \
-    ../K3OpEenRij/k3opeenrijmenudialog.cpp \
-    ../K3OpEenRij/qtk3opeenrijresources.cpp \
-    ../K3OpEenRij/k3opeenrijnames.cpp
+    $$PWD/k3opeenrijmenudialog.cpp \
+    $$PWD/qtk3opeenrijresources.cpp \
+    $$PWD/k3opeenrijnames.cpp
 
 HEADERS  += \
-    ../K3OpEenRij/k3opeenrijmenudialog.h \
-    ../K3OpEenRij/qtk3opeenrijresources.h \
-    ../K3OpEenRij/k3opeenrijnames.h
+    $$PWD/k3opeenrijmenudialog.h \
+    $$PWD/qtk3opeenrijresources.h \
+    $$PWD/k3opeenrijnames.h
 
 RESOURCES += \
-    ../K3OpEenRij/K3OpEenRij.qrc
+    $$PWD/K3OpEenRij.qrc
 
 
 
