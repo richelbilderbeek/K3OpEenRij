@@ -15,14 +15,14 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QDialog { 
-  background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0 #ffdbeb, stop: 1 #ff7b8b);
+ background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1, stop: 0  #bbf, stop: 0.2  #bbf, stop: 0.5 #bfb, stop: 0.8 #fbb, stop: 1 #fbb);
 }
 QPushButton { background-color: rgb(255, 255, 255);  }
 QPushButton { color: rgb(0,0,0); }
 QPushButton { font: 32px, &quot;monospace&quot; }
 QLabel { font: 32px, &quot;monospace&quot; }
 
-#ffcbdb</string>
+</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="6" column="0" colspan="5">
