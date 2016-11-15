@@ -4,6 +4,20 @@ K3-themed game of connect-three programmed in C++ using Qt and Wt (see 'About th
 
 ![K3-Op-Een-Rij game version 7.0](Screenshots/K3OpEenRij_7_0.png)
 
+# Building
+
+On a terminal, do:
+
+```
+sudo apt-get install libqt5svg5-dev
+git clone https://github.com/richelbilderbeek/K3OpEenRij.git
+cd K3OpEenRij
+./download_other_githubs.sh
+qmake K3OpEenRijDesktop.pro
+make
+./K3OpEenRijDesktop
+```
+
 # Downloads
 
  * [Download the Windows executable](http://richelbilderbeek.nl/GameK3OpEenRij.zip)

@@ -18,7 +18,7 @@ ribi::koer::QtK3OpEenRijResources::QtK3OpEenRijResources()
     },
     m_computer_grey_filename{"K3OpEenRijComputerGrey.png"},
     m_css{"K3OpEenRij.css"},
-    m_empty_filename{"K3OpEenRijEmpty.png"},
+    m_empty_filename{"K3OpEenRijEmpty2.png"},
     m_icon_filename{"K3OpEenRijIcon.png"},
     m_instructions_good_filenames
     {
