@@ -9,6 +9,7 @@ K3-themed game of connect-three programmed in C++ using Qt and Wt (see 'About th
 On a terminal, do:
 
 ```
+sudo apt-get install libqt5svg5-dev
 git clone https://github.com/richelbilderbeek/K3OpEenRij.git
 cd K3OpEenRij
 ./download_other_githubs.sh
