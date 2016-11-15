@@ -40,6 +40,8 @@ private:
   BlondeGirl m_blond;
   RedHairedGirl m_red;
   std::bitset<3> m_is_player_human;
+  const QImage m_david;
+  const QImage m_david_grey;
   const QImage m_hanne;
   const QImage m_hanne_grey;
   const QImage m_josje;
@@ -54,6 +56,10 @@ private:
   const QImage m_kristel_grey;
   const QImage m_marthe;
   const QImage m_marthe_grey;
+  const QImage m_matt;
+  const QImage m_matt_grey;
+  const QImage m_tyler;
+  const QImage m_tyler_grey;
   const QImage m_computer1;
   const QImage m_computer2;
   const QImage m_computer3;

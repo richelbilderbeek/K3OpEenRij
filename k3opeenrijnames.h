@@ -6,9 +6,9 @@
 namespace ribi {
 namespace koer {
 
-enum class BlackHairedGirl { kristel, marthe };
-enum class BlondeGirl { kathleen, josje, klaasje };
-enum class RedHairedGirl { karen, hanne };
+enum class BlackHairedGirl { kristel, marthe, david };
+enum class BlondeGirl { kathleen, josje, klaasje, matt };
+enum class RedHairedGirl { karen, hanne, tyler };
 
 BlackHairedGirl GetNext(const BlackHairedGirl girl) noexcept;
 BlondeGirl GetNext(const BlondeGirl girl) noexcept;

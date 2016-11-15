@@ -22,6 +22,8 @@ ribi::koer::QtK3OpEenRijSelectPlayerWidget::QtK3OpEenRijSelectPlayerWidget(
     m_blond{BlondeGirl::klaasje},
     m_red{RedHairedGirl::hanne},
     m_is_player_human{},
+    m_david{resources.GetPlayerFilename(true,BlackHairedGirl::david).c_str()},
+    m_david_grey{resources.GetPlayerFilename(false,BlackHairedGirl::david).c_str()},
     m_hanne{resources.GetPlayerFilename(true,RedHairedGirl::hanne).c_str()},
     m_hanne_grey{resources.GetPlayerFilename(false,RedHairedGirl::hanne).c_str()},
     m_josje{resources.GetPlayerFilename(true,BlondeGirl::josje).c_str()},
@@ -36,6 +38,10 @@ ribi::koer::QtK3OpEenRijSelectPlayerWidget::QtK3OpEenRijSelectPlayerWidget(
     m_kristel_grey{resources.GetPlayerFilename(false,BlackHairedGirl::kristel).c_str()},
     m_marthe{resources.GetPlayerFilename(true,BlackHairedGirl::marthe).c_str()},
     m_marthe_grey{resources.GetPlayerFilename(false,BlackHairedGirl::marthe).c_str()},
+    m_matt{resources.GetPlayerFilename(true,BlondeGirl::matt).c_str()},
+    m_matt_grey{resources.GetPlayerFilename(false,BlondeGirl::matt).c_str()},
+    m_tyler{resources.GetPlayerFilename(true,RedHairedGirl::tyler).c_str()},
+    m_tyler_grey{resources.GetPlayerFilename(false,RedHairedGirl::tyler).c_str()},
     m_computer1(resources.GetComputerFilename(0).c_str()),
     m_computer2(resources.GetComputerFilename(1).c_str()),
     m_computer3(resources.GetComputerFilename(2).c_str()),
@@ -58,6 +64,7 @@ const QImage& ribi::koer::QtK3OpEenRijSelectPlayerWidget::GetImage(const bool is
   {
     case BlackHairedGirl::kristel: return is_human ? m_kristel : m_kristel_grey;
     case BlackHairedGirl::marthe: return is_human ? m_marthe : m_marthe_grey;
+    case BlackHairedGirl::david: return is_human ? m_david : m_david_grey;
   }
   assert(!"Should not get here");
   throw std::logic_error("Unknown girl image");
@@ -70,6 +77,7 @@ const QImage& ribi::koer::QtK3OpEenRijSelectPlayerWidget::GetImage(const bool is
     case BlondeGirl::kathleen: return is_human ? m_kathleen : m_kathleen_grey;
     case BlondeGirl::josje: return is_human ? m_josje : m_josje_grey;
     case BlondeGirl::klaasje: return is_human ? m_klaasje : m_klaasje_grey;
+    case BlondeGirl::matt: return is_human ? m_matt : m_matt_grey;
   }
   assert(!"Should not get here");
   throw std::logic_error("Unknown girl image");
@@ -81,6 +89,7 @@ const QImage& ribi::koer::QtK3OpEenRijSelectPlayerWidget::GetImage(const bool is
   {
     case RedHairedGirl::karen: return is_human ? m_karen : m_karen_grey;
     case RedHairedGirl::hanne: return is_human ? m_hanne : m_hanne_grey;
+    case RedHairedGirl::tyler: return is_human ? m_tyler : m_tyler_grey;
   }
   assert(!"Should not get here");
   throw std::logic_error("Unknown girl image");
