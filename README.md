@@ -1,5 +1,10 @@
 # K3-Op-Een-Rij
 
+[![Build Status](https://travis-ci.org/richelbilderbeek/K3OpEenRij.svg?branch=master)](https://travis-ci.org/richelbilderbeek/K3OpEenRij)
+[![codecov.io](https://codecov.io/github/richelbilderbeek/K3OpEenRij/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/K3OpEenRij?branch=master)
+[![gplv3](http://www.gnu.org/graphics/gplv3-88x31.png)](http://www.gnu.org/licenses/gpl.html)
+
+
 K3-themed game of connect-three programmed in C++ using Qt and Wt (see 'About the program' for more details).
 
 ![K3-Op-Een-Rij game version 8.0](Screenshots/K3OpEenRij_8_0.png)
