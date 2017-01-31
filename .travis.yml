@@ -9,13 +9,10 @@ before_install:
   - sudo pip install codecov
   - sudo apt-get update -qq
 
-addons:
-  apt:
-    sources:
-    - boost-latest
-    - ubuntu-toolchain-r-test
-    packages:
-    - libboost1.55-all-dev
+# Boost
+addons: 
+  apt: 
+    packages: libboost-all-dev
 
 install: 
   - sudo apt-get install -qq g++-5  
