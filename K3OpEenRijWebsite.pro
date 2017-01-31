@@ -30,10 +30,7 @@ CONFIG(release, debug|release) {
 include(../RibiLibraries/BoostAll.pri)
 include(../RibiLibraries/Wt.pri)
 
-
-
 #Specific, console
-
 include(../RibiClasses/CppWtAboutDialog/CppWtAboutDialog.pri)
 include(../RibiClasses/CppWtAutoConfig/CppWtAutoConfig.pri)
 include(../RibiClasses/CppAbout/CppAbout.pri)
