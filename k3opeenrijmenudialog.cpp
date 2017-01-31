@@ -63,7 +63,7 @@ int ribi::koer::MenuDialog::ExecuteSpecific(const std::vector<std::string>& argv
   else
   {
     std::cout << GetHelp() << '\n';
-    return 1;
+    return 0;
   }
 }
 
