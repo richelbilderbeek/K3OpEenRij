@@ -40,7 +40,7 @@ before_script:
   - sleep 3 # give xvfb some time to start
 
 before_script:
-  - ./download_other_githubs.sh
+  - ./download_other_githubs
 
 script: 
   - qmake K3OpEenRijConsole.pro
@@ -52,9 +52,9 @@ script:
   - qmake K3OpEenRijWebsite.pro
   - make
   - ./K3OpEenRijWebsite &
-  - ./get_code_cov.sh
+  - ./get_code_cov
   - codecov
-  - ./do_oclint.sh
+  - ./do_oclint
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
