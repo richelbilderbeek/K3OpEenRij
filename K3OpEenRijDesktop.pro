@@ -1,12 +1,27 @@
-include(../RibiLibraries/DesktopApplicationNoWeffcpp.pri)
-include(../RibiLibraries/Boost.pri)
+CONFIG += c++14
+QMAKE_CXX = g++-5
+QMAKE_LINK = g++-5
+QMAKE_CC = gcc-5
+QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++14
+
+CONFIG += debug_and_release
+
+QT       += core gui
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
+TEMPLATE = app
+
+CONFIG(release, debug|release) {
+  message(Release mode)
+  DEFINES += NDEBUG
+}
 
 include(../RibiClasses/CppAbout/CppAbout.pri)
 include(../RibiClasses/CppFileIo/CppFileIo.pri)
 include(../RibiClasses/CppHelp/CppHelp.pri)
 include(../RibiClasses/CppMenuDialog/CppMenuDialog.pri)
-
-include(../RibiLibraries/GeneralDesktop.pri)
+include(../RibiClasses/CppQtAboutDialog/CppQtAboutDialog.pri)
+include(../RibiClasses/CppQtHideAndShowDialog/CppQtHideAndShowDialog.pri)
 
 #Specific, console
 include(../DotMatrix/DotMatrix.pri)

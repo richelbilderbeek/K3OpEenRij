@@ -42,10 +42,7 @@ include(../ConnectThree/ConnectThree.pri)
 include(../ConnectThree/ConnectThreeWidget.pri)
 include(../ConnectThree/WtConnectThreeWidget.pri)
 include(../RibiClasses/CppTribool/CppTribool.pri)
-
-#Specific, web
 include(K3OpEenRijWebsite.pri)
-include(../RibiClasses/CppWtConnectThreeWidget/CppWtConnectThreeWidget.pri)
 include(../ConnectThree/ConnectThreeWebsite.pri)
 
 SOURCES += wtmain.cpp
