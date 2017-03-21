@@ -1,6 +1,7 @@
 #include "k3opeenrijnames.h"
 
 #include <cassert>
+#include <iostream>
 #include <stdexcept>
 
 ribi::koer::BlackHairedGirl ribi::koer::GetNext(
@@ -76,3 +77,20 @@ std::string ribi::koer::ToStr(const RedHairedGirl girl) noexcept
   throw std::logic_error("Unknown girl");
 }
 
+std::ostream& ribi::koer::operator<<(std::ostream& os, const BlackHairedGirl g) noexcept
+{
+  os << ToStr(g);
+  return os;
+}
+
+std::ostream& ribi::koer::operator<<(std::ostream& os, const BlondeGirl g) noexcept
+{
+  os << ToStr(g);
+  return os;
+}
+
+std::ostream& ribi::koer::operator<<(std::ostream& os, const RedHairedGirl g) noexcept
+{
+  os << ToStr(g);
+  return os;
+}
