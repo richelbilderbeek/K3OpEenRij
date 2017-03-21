@@ -1,25 +1,26 @@
 language: cpp
 compiler: gcc
 sudo: require
-dist: trusty # Qt5, from https://gist.github.com/jreese/6207161#gistcomment-1462109
+dist: trusty
+
+# Boost
+addons: 
+  apt: 
+    packages: libboost-all-dev
 
 before_install:
   - echo $TRAVIS_BRANCH
-  # Qt5, from https://gist.github.com/jreese/6207161#gistcomment-1462109
-  - sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
-  - sudo apt-get update -qq
   # C++14
   - sudo add-apt-repository --yes ppa:ubuntu-toolchain-r/test
   - sudo apt-get update -qq
-  # SFML
-  - sudo apt-add-repository -y ppa:sonkun/sfml-development
 
 install: 
+  # C++14
+  - sudo apt-get install -qq g++-5
+  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 90
   # Qt5
   - sudo apt-get install -qq libqt5webkit5-dev qtdeclarative5-dev
   - export QMAKE=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake
-  # C++14
-  - sudo apt-get install -qq g++-5
   # Wt
   - sudo apt-get install witty witty-dbg witty-dev witty-doc
   # gcov
@@ -27,22 +28,14 @@ install:
   - sudo pip install codecov
   # OCLint
   - ./install_oclint
-  # GraphViz
-  - sudo apt-get install -qq graphviz
-
-# Boost
-addons: 
-  apt: 
-    packages: libboost-all-dev
+  # Download other prerequisites
+  - ./download_other_githubs
 
 # Start virtual X server, from https://docs.travis-ci.com/user/gui-and-headless-browsers/
 before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3 # give xvfb some time to start
-
-before_script:
-  - ./download_other_githubs
 
 script: 
   # Console test
