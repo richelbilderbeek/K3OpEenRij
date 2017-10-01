@@ -54,7 +54,6 @@ int ribi::koer::MenuDialog::ExecuteSpecific(const std::vector<std::string>& argv
       case Winner::draw     : std::cout << "The game ended in a draw"; break;
       case Winner::no_winner:
         assert(!"Should not get here");
-        throw std::logic_error("Should not respond to no winner");
     }
 
     std::cout << std::endl;

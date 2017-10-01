@@ -15,7 +15,7 @@ ribi::koer::BlackHairedGirl ribi::koer::GetNext(
     case BlackHairedGirl::david: return BlackHairedGirl::kristel;
   }
   assert(!"Should not get here");
-  throw std::logic_error("Unknown girl");
+  return BlackHairedGirl::marthe;
 }
 
 ribi::koer::BlondeGirl ribi::koer::GetNext(const BlondeGirl girl) noexcept
@@ -28,7 +28,7 @@ ribi::koer::BlondeGirl ribi::koer::GetNext(const BlondeGirl girl) noexcept
     case BlondeGirl::matt: return BlondeGirl::kathleen;
   }
   assert(!"Should not get here");
-  throw std::logic_error("Unknown girl");
+  return BlondeGirl::josje;
 
 }
 
@@ -40,7 +40,7 @@ ribi::koer::RedHairedGirl ribi::koer::GetNext(const RedHairedGirl girl) noexcept
     case RedHairedGirl::tyler: return RedHairedGirl::karen;
   }
   assert(!"Should not get here");
-  throw std::logic_error("Unknown girl");
+  return RedHairedGirl::hanne;
 }
 
 std::string ribi::koer::ToStr(const BlackHairedGirl girl) noexcept
@@ -51,7 +51,7 @@ std::string ribi::koer::ToStr(const BlackHairedGirl girl) noexcept
     case BlackHairedGirl::david: return "David";
   }
   assert(!"Should not get here");
-  throw std::logic_error("Unknown girl");
+  return "Kristel";
 }
 
 std::string ribi::koer::ToStr(const BlondeGirl girl) noexcept
@@ -63,7 +63,7 @@ std::string ribi::koer::ToStr(const BlondeGirl girl) noexcept
     case BlondeGirl::matt: return "Matt";
   }
   assert(!"Should not get here");
-  throw std::logic_error("Unknown girl");
+  return "Kathleen";
 }
 
 std::string ribi::koer::ToStr(const RedHairedGirl girl) noexcept
@@ -74,7 +74,7 @@ std::string ribi::koer::ToStr(const RedHairedGirl girl) noexcept
     case RedHairedGirl::tyler: return "Tyler";
   }
   assert(!"Should not get here");
-  throw std::logic_error("Unknown girl");
+  return "Karen";
 }
 
 std::ostream& ribi::koer::operator<<(std::ostream& os, const BlackHairedGirl g) noexcept
