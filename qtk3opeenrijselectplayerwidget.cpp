@@ -67,7 +67,7 @@ const QImage& ribi::koer::QtK3OpEenRijSelectPlayerWidget::GetImage(const bool is
     case BlackHairedGirl::david: return is_human ? m_david : m_david_grey;
   }
   assert(!"Should not get here");
-  throw std::logic_error("Unknown girl image");
+  return m_marthe;
 }
 
 const QImage& ribi::koer::QtK3OpEenRijSelectPlayerWidget::GetImage(const bool is_human,const BlondeGirl girl) const noexcept
@@ -80,7 +80,7 @@ const QImage& ribi::koer::QtK3OpEenRijSelectPlayerWidget::GetImage(const bool is
     case BlondeGirl::matt: return is_human ? m_matt : m_matt_grey;
   }
   assert(!"Should not get here");
-  throw std::logic_error("Unknown girl image");
+  return m_klaasje;
 }
 
 const QImage& ribi::koer::QtK3OpEenRijSelectPlayerWidget::GetImage(const bool is_human,const RedHairedGirl girl) const noexcept
@@ -92,7 +92,7 @@ const QImage& ribi::koer::QtK3OpEenRijSelectPlayerWidget::GetImage(const bool is
     case RedHairedGirl::tyler: return is_human ? m_tyler : m_tyler_grey;
   }
   assert(!"Should not get here");
-  throw std::logic_error("Unknown girl image");
+  return m_karen;
 }
 
 void ribi::koer::QtK3OpEenRijSelectPlayerWidget::mousePressEvent(QMouseEvent * e)

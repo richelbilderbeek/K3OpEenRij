@@ -1,7 +1,4 @@
 CONFIG += c++14
-QMAKE_CXX = g++-5
-QMAKE_LINK = g++-5
-QMAKE_CC = gcc-5
 QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++14
 
 CONFIG += debug_and_release
