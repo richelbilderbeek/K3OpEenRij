@@ -71,3 +71,7 @@ The most recent screenshots are at the top.
 # Value of project
 
 Assuming Dutch minimum wages, using David A. Wheeler's 'SLOCCount': see [the K3-Op-Een-Rij SLOCCount](K3OpEenRijSloccount.txt).
+
+## External links
+
+ * [Richel Bilderbeek's games](https://github.com/richelbilderbeek/Games)
