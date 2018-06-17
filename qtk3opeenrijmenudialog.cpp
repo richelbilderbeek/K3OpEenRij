@@ -15,15 +15,11 @@
 ribi::koer::QtK3OpEenRijMenuDialog::QtK3OpEenRijMenuDialog(
   const QtK3OpEenRijResources& resources,
   QWidget *parent
-) noexcept : QtHideAndShowDialog(parent),
+) noexcept : QDialog(parent),
     ui(new Ui::QtK3OpEenRijMenuDialog),
     m_select(new QtK3OpEenRijSelectPlayerWidget(resources,this)),
     m_resources{resources}
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
-
   ui->setupUi(this);
   ui->layout_horizontal->addWidget(m_select);
 }
@@ -62,13 +58,13 @@ void ribi::koer::QtK3OpEenRijMenuDialog::on_button_about_clicked() noexcept
   QtAboutDialog d(about);
   d.setStyleSheet(this->styleSheet());
   d.setWindowIcon(this->windowIcon());
-  this->ShowChild(&d);
+  d.showNormal();
 }
 
 void ribi::koer::QtK3OpEenRijMenuDialog::on_button_instructions_clicked() noexcept
 {
-  QtK3OpEenRijInstructionsDialog d;
-  this->ShowChild(&d);
+  QtK3OpEenRijInstructionsDialog d{};
+  d.show();
 }
 
 void ribi::koer::QtK3OpEenRijMenuDialog::on_button_quit_clicked() noexcept
@@ -87,35 +83,12 @@ void ribi::koer::QtK3OpEenRijMenuDialog::on_button_start_clicked() noexcept
       m_select->GetRed()
     )
   ;
-  con3::QtGameDialog d(
+  con3::QtGameDialog d{
     resources,
     m_select->GetIsPlayerHuman()
-  );
+  };
   d.setWindowTitle("K3OpEenRij");
   d.setStyleSheet(this->styleSheet());
   d.setWindowIcon(this->windowIcon());
-  ShowChild(&d);
+  d.show();
 }
-
-#ifndef NDEBUG
-void ribi::koer::QtK3OpEenRijMenuDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  {
-    const ribi::con3::Resources resources;
-    con3::QtConnectThreeWidget widget(resources);
-    con3::QtGameDialog d(resources,std::bitset<3>(false));
-  }
-  {
-    QtK3OpEenRijInstructionsDialog d;
-  }
-  {
-    About about = MenuDialog().GetAbout();
-    QtAboutDialog d(about);
-  }
-}
-#endif

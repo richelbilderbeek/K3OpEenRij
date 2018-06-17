@@ -46,6 +46,10 @@ script:
   - qmake K3OpEenRijConsole.pro
   - make debug
   - ./K3OpEenRijConsole
+  # Desktop test
+  - qmake K3OpEenRijDesktopTest.pro
+  - make debug
+  - ./K3OpEenRijDesktopTest
   # Desktop
   - qmake K3OpEenRijDesktop.pro
   - make debug

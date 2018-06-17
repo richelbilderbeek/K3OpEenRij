@@ -23,6 +23,9 @@ QMAKE_CXXFLAGS += -std=c++14
 # Qt does not go well with -Weffc++
 QMAKE_CXXFLAGS += -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Werror
 
+# Fix error: unrecognized option '--push-state--no-as-needed'
+QMAKE_LFLAGS += -fuse-ld=gold
+
 # Debug and release mode
 CONFIG += debug_and_release
 
