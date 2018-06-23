@@ -1,6 +1,9 @@
 CONFIG += c++14
 QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++14
 
+# Fix error: unrecognized option '--push-state--no-as-needed'
+QMAKE_LFLAGS += -fuse-ld=gold
+
 CONFIG += debug_and_release
 
 QT       += core gui

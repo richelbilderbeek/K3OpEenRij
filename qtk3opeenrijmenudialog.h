@@ -21,7 +21,7 @@ namespace koer {
 struct QtK3OpEenRijSelectPlayerWidget;
 struct QtK3OpEenRijResources;
 
-class QtK3OpEenRijMenuDialog : public ribi::QtHideAndShowDialog
+class QtK3OpEenRijMenuDialog : public QDialog
 {
   Q_OBJECT
 
@@ -46,11 +46,6 @@ private slots:
   void on_button_instructions_clicked() noexcept;
   void on_button_quit_clicked() noexcept;
   void on_button_start_clicked() noexcept;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
-
 };
 
 ribi::con3::Resources Convert(
