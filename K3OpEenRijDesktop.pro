@@ -41,10 +41,6 @@ SOURCES += qtmain.cpp
 CONFIG += c++14
 QMAKE_CXXFLAGS += -std=c++14
 
-# High warning levels
-# Qt does not go well with -Weffc++
-QMAKE_CXXFLAGS += -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Werror
-
 # Debug and release mode
 CONFIG += debug_and_release
 
@@ -63,6 +59,10 @@ CONFIG(release, debug|release) {
 
 # In debug mode, turn on gcov and UBSAN
 CONFIG(debug, debug|release) {
+
+  # High warning levels
+  # Qt does not go well with -Weffc++
+  QMAKE_CXXFLAGS += -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Werror
 
   # gcov
   QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
@@ -103,3 +103,5 @@ contains(QMAKE_HOST.name,pc-157-103) {
   QMAKE_LINK = g++-5
   QMAKE_CC = gcc-5
 }
+
+INCLUDEPATH += /home/richel/GitHubs/mxe_gcc_cpp98/mxe/usr/i686-w64-mingw32.static/include
