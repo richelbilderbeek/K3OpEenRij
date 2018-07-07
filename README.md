@@ -9,6 +9,8 @@ K3-themed game of connect-three programmed in C++ using Qt and Wt (see 'About th
 
 ![K3-Op-Een-Rij game version 8.0](Screenshots/K3OpEenRij_8_0.png)
 
+See [screenshots](Screenshots/README.md) for more [screenshots](Screenshots/README.md).
+
 ## Building
 
 On a terminal, do:
@@ -36,7 +38,3 @@ K3-Op-Een-Rij is cross-compiled using [MXE](http://mxe.cc) in the bash shell scr
 ## [Contributing](CONTRIBUTING.md)
 
 See [contributing](CONTRIBUTING.md).
-
-## [Screenshots](Screenshots.md)
-
-See [screenshots](Screenshots.md).
