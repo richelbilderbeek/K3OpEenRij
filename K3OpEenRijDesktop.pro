@@ -41,10 +41,6 @@ SOURCES += qtmain.cpp
 CONFIG += c++14
 QMAKE_CXXFLAGS += -std=c++14
 
-# High warning levels
-# Qt does not go well with -Weffc++
-QMAKE_CXXFLAGS += -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Werror
-
 # Debug and release mode
 CONFIG += debug_and_release
 
@@ -64,6 +60,10 @@ CONFIG(release, debug|release) {
 # In debug mode, turn on gcov and UBSAN
 CONFIG(debug, debug|release) {
 
+  # High warning levels
+  # Qt does not go well with -Weffc++
+  QMAKE_CXXFLAGS += -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -Werror
+
   # gcov
   QMAKE_CXXFLAGS += -fprofile-arcs -ftest-coverage
   LIBS += -lgcov
@@ -78,8 +78,8 @@ CONFIG(debug, debug|release) {
   QMAKE_LFLAGS += -pg
 
   # GSL
-  #DEFINES += GSL_THROW_ON_CONTRACT_VIOLATION
-  DEFINES += GSL_UNENFORCED_ON_CONTRACT_VIOLATION
+  DEFINES += GSL_THROW_ON_CONTRACT_VIOLATION
+  #DEFINES += GSL_UNENFORCED_ON_CONTRACT_VIOLATION
 }
 
 # Qt
@@ -95,11 +95,3 @@ QMAKE_CXXFLAGS += -Wno-unused-variable
 #   BOOST_DEFINE_MATH_CONSTANT(half, 5.000000000000000000000000000000000000e-01, "5.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e-01")
 #   ^
 QMAKE_CXXFLAGS += -fext-numeric-literals
-
-message(Host name: $$QMAKE_HOST.name)
-contains(QMAKE_HOST.name,pc-157-103) {
-  message("Host is university computer in the canteen")
-  QMAKE_CXX = g++-5
-  QMAKE_LINK = g++-5
-  QMAKE_CC = gcc-5
-}

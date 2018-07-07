@@ -58,13 +58,13 @@ void ribi::koer::QtK3OpEenRijMenuDialog::on_button_about_clicked() noexcept
   QtAboutDialog d(about);
   d.setStyleSheet(this->styleSheet());
   d.setWindowIcon(this->windowIcon());
-  d.showNormal();
+  d.exec();
 }
 
 void ribi::koer::QtK3OpEenRijMenuDialog::on_button_instructions_clicked() noexcept
 {
   QtK3OpEenRijInstructionsDialog d{};
-  d.show();
+  d.exec();
 }
 
 void ribi::koer::QtK3OpEenRijMenuDialog::on_button_quit_clicked() noexcept
@@ -90,5 +90,5 @@ void ribi::koer::QtK3OpEenRijMenuDialog::on_button_start_clicked() noexcept
   d.setWindowTitle("K3OpEenRij");
   d.setStyleSheet(this->styleSheet());
   d.setWindowIcon(this->windowIcon());
-  d.show();
+  d.exec();
 }

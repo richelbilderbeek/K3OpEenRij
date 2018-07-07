@@ -6,7 +6,7 @@
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Weffc++"
-#include "qthideandshowdialog.h"
+#include <QDialog>
 #include "connectthreeresources.h"
 #include "k3opeenrijnames.h"
 #pragma GCC diagnostic pop
