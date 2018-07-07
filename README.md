@@ -19,6 +19,10 @@ master|develop|project
 [![Build Status](https://travis-ci.org/richelbilderbeek/DotMatrix.svg?branch=master)](https://travis-ci.org/richelbilderbeek/DotMatrix) [![codecov.io](https://codecov.io/github/richelbilderbeek/DotMatrix/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/DotMatrix?branch=master) | [![Build Status](https://travis-ci.org/richelbilderbeek/DotMatrix.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/DotMatrix) [![codecov.io](https://codecov.io/github/richelbilderbeek/DotMatrix/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/DotMatrix?branch=master) | [DotMatrix](https://github.com/richelbilderbeek/DotMatrix)
 [![Build Status](https://travis-ci.org/richelbilderbeek/RibiClasses.svg?branch=master)](https://travis-ci.org/richelbilderbeek/RibiClasses) [![codecov.io](https://codecov.io/github/richelbilderbeek/RibiClasses/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/RibiClasses?branch=master) | [![Build Status](https://travis-ci.org/richelbilderbeek/RibiClasses.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/RibiClasses) [![codecov.io](https://codecov.io/github/richelbilderbeek/RibiClasses/coverage.svg?branch=develop)](https://codecov.io/github/richelbilderbeek/RibiClasses?branch=develop) | [RibiClasses](https://github.com/richelbilderbeek/RibiClasses)
 
+## Downloads
+
+ * [Download the Windows executable](http://richelbilderbeek.nl/K3OpEenRij.zip)
+
 ## Building
 
 On a terminal, do:
@@ -32,10 +36,6 @@ qmake K3OpEenRijDesktop.pro
 make
 ./K3OpEenRijDesktop
 ```
-
-## Downloads
-
- * [Download the Windows executable](http://richelbilderbeek.nl/GameK3OpEenRij.zip)
 
 ## About the program
 
