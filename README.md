@@ -7,7 +7,7 @@ develop|[![Build Status](https://travis-ci.org/richelbilderbeek/K3OpEenRij.svg?b
 
 K3-themed game of connect-three programmed in C++ using Qt and Wt (see 'About the program' for more details).
 
-![K3-Op-Een-Rij game version 8.0](Screenshots/K3OpEenRij_8_0.png)
+![K3-Op-Een-Rij game version 7.0](Screenshots/K3OpEenRij_7_0.png)
 
 See [screenshots](Screenshots/README.md) for more [screenshots](Screenshots/README.md).
 
