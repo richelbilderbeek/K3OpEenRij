@@ -1,7 +1,7 @@
 #ifndef QTK3OPEENRIJINSTRUCTIONSDIALOG_H
 #define QTK3OPEENRIJINSTRUCTIONSDIALOG_H
 
-#include "qthideandshowdialog.h"
+#include <QDialog>
 
 namespace Ui {
   class QtK3OpEenRijInstructionsDialog;
@@ -10,7 +10,7 @@ namespace Ui {
 namespace ribi {
 namespace koer {
 
-class QtK3OpEenRijInstructionsDialog : public QtHideAndShowDialog
+class QtK3OpEenRijInstructionsDialog : public QDialog
 {
   Q_OBJECT
   

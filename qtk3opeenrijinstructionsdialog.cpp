@@ -5,7 +5,7 @@
 #pragma GCC diagnostic pop
 
 ribi::koer::QtK3OpEenRijInstructionsDialog::QtK3OpEenRijInstructionsDialog(QWidget *parent) noexcept
-  : QtHideAndShowDialog(parent),
+  : QDialog(parent),
     ui(new Ui::QtK3OpEenRijInstructionsDialog)
 {
   ui->setupUi(this);

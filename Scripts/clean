@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Go the the K3OpEenRij root folder
+cd ..
+
 rm Makefile
 rm Makefile.*
 rm -r release
