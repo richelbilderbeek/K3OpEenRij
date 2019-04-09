@@ -45,23 +45,23 @@ services:
 script: 
   # Console test
   - qmake K3OpEenRijConsoleTest.pro
-  - make debug
+  - make --silent debug
   - ./K3OpEenRijConsoleTest
   # Console
   - qmake K3OpEenRijConsole.pro
-  - make debug
+  - make --silent debug
   - ./K3OpEenRijConsole
   # Desktop test
   - qmake K3OpEenRijDesktopTest.pro
-  - make debug
+  - make --silent debug
   - ./K3OpEenRijDesktopTest
   # Desktop
   - qmake K3OpEenRijDesktop.pro
-  - make debug
+  - make --silent debug
   - ./K3OpEenRijDesktop &
   # Website
   - qmake K3OpEenRijWebsite.pro
-  - make debug
+  - make --silent debug
   - ./K3OpEenRijWebsite &
   # Codecov
   - ./get_code_cov > /dev/null
