@@ -1,7 +1,7 @@
 language: cpp
+dist: xenial
 compiler: gcc
 sudo: require
-dist: xenial
 
 # Boost
 addons: 
