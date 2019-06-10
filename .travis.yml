@@ -22,7 +22,11 @@ install:
   # OCLint
   - ./install_oclint
   # Download other prerequisites
-  - ./Scripts/download_other_githubs
+  - ./scripts/download_other_githubs
+  # Check dead links
+  - sudo apt-get install -qq npm
+  - npm config set strict-ssl false
+  - sudo npm install -g markdown-link-check
 
 services:
  - xvfb
@@ -48,6 +52,9 @@ script:
   - qmake K3OpEenRijWebsite.pro
   - make --silent debug
   - ./K3OpEenRijWebsite &
+  # Check dead links
+  - rm .travis.yml
+  - ./scripts/check_dead_links
   # Codecov
   - ./get_code_cov > /dev/null
   - codecov > /dev/null
