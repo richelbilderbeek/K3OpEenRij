@@ -1,5 +1,8 @@
-CONFIG += c++14
-QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++14
+# C++17
+CONFIG += c++17
+QMAKE_CXXFLAGS += -std=c++17
+
+QMAKE_CXXFLAGS += -Wall -Wextra -Werror
 
 CONFIG += debug_and_release
 
