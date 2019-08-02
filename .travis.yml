@@ -4,15 +4,13 @@ compiler:
   - gcc
   # - clang 
 
-# Boost
-addons: 
-  apt: 
-    packages: libboost-all-dev
-
 before_install:
   - echo $TRAVIS_BRANCH
 
 install: 
+  - sudo apt update -qq
+  # Boost
+  - sudo apt install -qq libboost-all-dev
   # Qt5
   - sudo apt-get install -qq qt5-qmake qt5-default
   # Wt
