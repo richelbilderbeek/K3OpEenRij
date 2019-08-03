@@ -5,7 +5,7 @@
 #include <vector>
 
 #pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
+
 #include <QDialog>
 #include "connectthreeresources.h"
 #include "k3opeenrijnames.h"

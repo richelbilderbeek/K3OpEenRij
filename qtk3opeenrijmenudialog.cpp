@@ -1,5 +1,5 @@
 #pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
+
 #include "qtk3opeenrijmenudialog.h"
 
 #include "k3opeenrijmenudialog.h"

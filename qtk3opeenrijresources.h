@@ -2,7 +2,7 @@
 #define QTK3OPEENRIJRESOURCES_H
 
 #pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
+
 #include <array>
 #include <vector>
 #include "connectthreeresources.h"

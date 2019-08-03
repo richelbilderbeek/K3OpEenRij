@@ -4,7 +4,7 @@
 #include <bitset>
 
 #pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
+
 
 #include "k3opeenrijnames.h"
 
