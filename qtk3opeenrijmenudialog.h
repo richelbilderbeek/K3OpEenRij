@@ -4,12 +4,12 @@
 #include <string>
 #include <vector>
 
-#pragma GCC diagnostic push
+
 
 #include <QDialog>
 #include "connectthreeresources.h"
 #include "k3opeenrijnames.h"
-#pragma GCC diagnostic pop
+
 
 namespace Ui {
   class QtK3OpEenRijMenuDialog;

@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 #include "qtk3opeenrijresources.h"
 
@@ -8,7 +8,7 @@
 
 #include "fileio.h"
 
-#pragma GCC diagnostic pop
+
 
 ribi::koer::QtK3OpEenRijResources::QtK3OpEenRijResources()
   : m_computers_filenames{

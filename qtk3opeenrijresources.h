@@ -1,13 +1,13 @@
 #ifndef QTK3OPEENRIJRESOURCES_H
 #define QTK3OPEENRIJRESOURCES_H
 
-#pragma GCC diagnostic push
+
 
 #include <array>
 #include <vector>
 #include "connectthreeresources.h"
 #include "k3opeenrijnames.h"
-#pragma GCC diagnostic pop
+
 
 namespace ribi {
 namespace koer {

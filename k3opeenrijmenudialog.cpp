@@ -1,6 +1,6 @@
 #include "k3opeenrijmenudialog.h"
 
-#pragma GCC diagnostic push
+
 
 
 
@@ -15,7 +15,7 @@
 #include "qtk3opeenrijresources.h"
 
 
-#pragma GCC diagnostic pop
+
 
 int ribi::koer::MenuDialog::ExecuteSpecific(const std::vector<std::string>& argv) noexcept
 {

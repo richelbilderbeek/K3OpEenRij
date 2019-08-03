@@ -13,5 +13,5 @@ BOOST_AUTO_TEST_CASE(koer_get_next)
   BOOST_CHECK_NE(b, c);
 }
 
-#pragma GCC diagnostic pop
+
 

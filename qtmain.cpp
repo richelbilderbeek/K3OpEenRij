@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 #include <QApplication>
 #include <QIcon>
@@ -7,7 +7,7 @@
 #include <cassert>
 #include "qtk3opeenrijresources.h"
 #include "qtk3opeenrijmenudialog.h"
-#pragma GCC diagnostic pop
+
 
 int main(int argc, char *argv[])
 {

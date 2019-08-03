@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 #include "qtk3opeenrijmenudialog.h"
 
@@ -10,7 +10,7 @@
 #include "qtk3opeenrijinstructionsdialog.h"
 #include "qtk3opeenrijselectplayerwidget.h"
 #include "ui_qtk3opeenrijmenudialog.h"
-#pragma GCC diagnostic pop
+
 
 ribi::koer::QtK3OpEenRijMenuDialog::QtK3OpEenRijMenuDialog(
   const QtK3OpEenRijResources& resources,

@@ -1,4 +1,4 @@
-#pragma GCC diagnostic push
+
 
 #include "qtk3opeenrijselectplayerwidget.h"
 
@@ -9,7 +9,7 @@
 
 
 #include "qtk3opeenrijresources.h"
-#pragma GCC diagnostic pop
+
 
 const int ribi::koer::QtK3OpEenRijSelectPlayerWidget::m_sprite_height = 50;
 const int ribi::koer::QtK3OpEenRijSelectPlayerWidget::m_sprite_width  = 50;
