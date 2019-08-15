@@ -14,7 +14,7 @@ install:
   # Qt5
   - sudo apt-get install -qq qt5-qmake qt5-default
   # Wt
-  - sudo apt-get install witty witty-dbg witty-dev witty-doc
+  #- sudo apt-get install witty witty-dbg witty-dev witty-doc
   # gcov
   - sudo pip install codecov
   # OCLint
@@ -47,9 +47,9 @@ script:
   - make --silent debug
   - ./K3OpEenRijDesktop &
   # Website
-  - qmake K3OpEenRijWebsite.pro
-  - make --silent debug
-  - ./K3OpEenRijWebsite &
+  #- qmake K3OpEenRijWebsite.pro
+  #- make --silent debug
+  #- ./K3OpEenRijWebsite &
   # Check dead links
   - rm .travis.yml
   - ./scripts/check_dead_links
