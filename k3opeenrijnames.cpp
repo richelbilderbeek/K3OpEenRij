@@ -4,6 +4,16 @@
 #include <iostream>
 #include <stdexcept>
 
+std::vector<ribi::koer::BlackHairedGirl> GetBlackHairedGirls() noexcept
+{
+  return
+  {
+    ribi::koer::BlackHairedGirl::kristel,
+    ribi::koer::BlackHairedGirl::marthe,
+    ribi::koer::BlackHairedGirl::david
+  };
+}
+
 ribi::koer::BlackHairedGirl ribi::koer::GetNext(
   const BlackHairedGirl girl
 ) noexcept

@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <initializer_list>
+#include <vector>
 
 namespace ribi {
 namespace koer {
@@ -15,19 +16,9 @@ enum class BlackHairedGirl
   david
 };
 
-constexpr std::initializer_list<BlackHairedGirl> GetBlackHairedGirls()
-{
-  return
-  {
-    BlackHairedGirl::kristel,
-    BlackHairedGirl::marthe,
-    BlackHairedGirl::david
-  };
-}
-
+std::vector<BlackHairedGirl> GetBlackHairedGirls() noexcept;
 enum class BlondeGirl { kathleen, josje, klaasje, matt };
 enum class RedHairedGirl { karen, hanne, tyler };
-
 
 BlackHairedGirl GetNext(const BlackHairedGirl girl) noexcept;
 BlondeGirl GetNext(const BlondeGirl girl) noexcept;
