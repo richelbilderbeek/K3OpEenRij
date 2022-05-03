@@ -46,6 +46,8 @@ private:
   const QImage m_hanne_grey;
   const QImage m_josje;
   const QImage m_josje_grey;
+  const QImage m_julia;
+  const QImage m_julia_grey;
   const QImage m_karen;
   const QImage m_karen_grey;
   const QImage m_kathleen;

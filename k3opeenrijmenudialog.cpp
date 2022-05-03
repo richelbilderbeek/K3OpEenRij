@@ -1,21 +1,12 @@
 #include "k3opeenrijmenudialog.h"
 
-
-
-
-
 #include <cassert>
 #include <iostream>
 #include <sstream>
 #include <stdexcept>
-
-
 #include "connectthreegame.h"
 #include "connectthreewidget.h"
 #include "qtk3opeenrijresources.h"
-
-
-
 
 int ribi::koer::MenuDialog::ExecuteSpecific(const std::vector<std::string>& argv) noexcept
 {

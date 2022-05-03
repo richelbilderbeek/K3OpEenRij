@@ -1,14 +1,7 @@
-
-
 #include "qtk3opeenrijresources.h"
-
 #include <cassert>
-
 #include <QFile>
-
 #include "fileio.h"
-
-
 
 ribi::koer::QtK3OpEenRijResources::QtK3OpEenRijResources()
   : m_computers_filenames{
@@ -32,11 +25,12 @@ ribi::koer::QtK3OpEenRijResources::QtK3OpEenRijResources()
       "K3OpEenRijKristel.png",   //2
       "K3OpEenRijKathleen.png",  //3
       "K3OpEenRijJosje.png",     //4
-      "K3OpEenRijHanne.png",     //5
-      "K3OpEenRijKlaasje.png",   //6
-      "K3OpEenRijMarthe.png",    //7
-      "K3OpEenRijMatt.png",      //8
-      "K3OpEenRijTyler.png"      //9
+      "K3OpEenRijJulia.png",     //5
+      "K3OpEenRijHanne.png",     //6
+      "K3OpEenRijKlaasje.png",   //7
+      "K3OpEenRijMarthe.png",    //8
+      "K3OpEenRijMatt.png",      //9
+      "K3OpEenRijTyler.png"      //10
     },
     m_players_grey_filenames{
       "K3OpEenRijDavidGrey.png",
@@ -44,6 +38,7 @@ ribi::koer::QtK3OpEenRijResources::QtK3OpEenRijResources()
       "K3OpEenRijKristelGrey.png",
       "K3OpEenRijKathleenGrey.png",
       "K3OpEenRijJosjeGrey.png",
+      "K3OpEenRijJuliaGrey.png",
       "K3OpEenRijHanneGrey.png",
       "K3OpEenRijKlaasjeGrey.png",
       "K3OpEenRijMartheGrey.png",
@@ -93,8 +88,9 @@ const std::string& ribi::koer::QtK3OpEenRijResources::GetPlayerFilename(const bo
   switch (girl) {
     case BlondeGirl::kathleen: index = 3; break;
     case BlondeGirl::josje   : index = 4; break;
-    case BlondeGirl::klaasje : index = 6; break;
-    case BlondeGirl::matt    : index = 8; break;
+    case BlondeGirl::julia   : index = 5; break;
+    case BlondeGirl::klaasje : index = 7; break;
+    case BlondeGirl::matt    : index = 9; break;
   }
   assert(index >= 0);
   assert(index < static_cast<int>(m_players_filenames.size()));
@@ -110,9 +106,9 @@ const std::string& ribi::koer::QtK3OpEenRijResources::GetPlayerFilename(const bo
   int index = -1;
   switch (girl)
   {
-    case BlackHairedGirl::kristel: index = 2; break;
-    case BlackHairedGirl::marthe : index = 7; break;
-    case BlackHairedGirl::david  : index = 0; break;
+    case BlackHairedGirl::kristel: index =  2; break;
+    case BlackHairedGirl::marthe : index =  8; break;
+    case BlackHairedGirl::tyler  : index = 10; break;
   }
   assert(index >= 0);
   assert(index < static_cast<int>(m_players_filenames.size()));
@@ -128,8 +124,8 @@ const std::string& ribi::koer::QtK3OpEenRijResources::GetPlayerFilename(const bo
   int index = -1;
   switch (girl) {
     case RedHairedGirl::karen: index = 1; break;
-    case RedHairedGirl::hanne: index = 5; break;
-    case RedHairedGirl::tyler: index = 9; break;
+    case RedHairedGirl::hanne: index = 6; break;
+    case RedHairedGirl::david: index = 0; break;
   }
   assert(index >= 0);
   assert(index < static_cast<int>(m_players_filenames.size()));

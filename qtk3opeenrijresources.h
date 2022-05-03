@@ -74,8 +74,8 @@ struct QtK3OpEenRijResources
   const std::string m_icon_filename;
   const std::vector<std::string> m_instructions_good_filenames;
   const std::string m_instructions_wrong_filename;
-  const std::array<std::string,10> m_players_filenames;
-  const std::array<std::string,10> m_players_grey_filenames;
+  const std::array<std::string,11> m_players_filenames;
+  const std::array<std::string,11> m_players_grey_filenames;
   const std::string m_quit_text;
   const std::string m_winner_text;
 

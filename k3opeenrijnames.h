@@ -13,12 +13,13 @@ enum class BlackHairedGirl
 {
   kristel,
   marthe,
-  david
+  tyler
 };
 
 std::vector<BlackHairedGirl> GetBlackHairedGirls() noexcept;
-enum class BlondeGirl { kathleen, josje, klaasje, matt };
-enum class RedHairedGirl { karen, hanne, tyler };
+enum class RedHairedGirl { karen, hanne,  david};
+
+enum class BlondeGirl { kathleen, josje, klaasje, julia, matt };
 
 BlackHairedGirl GetNext(const BlackHairedGirl girl) noexcept;
 BlondeGirl GetNext(const BlondeGirl girl) noexcept;
